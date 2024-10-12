@@ -2,15 +2,27 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: "#F7F9F9",
+        black: "#242038",
+        purple: "#6369D1",
+        turquoise: "#61E1E0",
+        pink: "#FFC4EB",
+        lightGrey: "#D8D7DB",
+        grey: "#7C7988",
+        red: "#D64045",
+        test: "#aabbcc",
+      },
+      fontFamily: {
+        jost: ["var(--font-jost)"],
+        noto: ["var(--font-noto-sans)"],
       },
     },
   },

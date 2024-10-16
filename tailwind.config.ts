@@ -14,7 +14,7 @@ const config: Config = {
         black: "#242038",
         purple: "#6369D1",
         turquoise: "#61E1E0",
-        pink: "#FFC4EB",
+        pink: "#E36397",
         lightGrey: "#D8D7DB",
         grey: "#7C7988",
         red: "#D64045",

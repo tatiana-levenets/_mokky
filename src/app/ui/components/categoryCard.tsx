@@ -14,10 +14,10 @@ export default function CategoryCard({ name, src, href, amount }: Category) {
           height={36}
           alt={name}
           key={name}
-          className="mr-4 category-icon"
+          className="mr-4 category-icon transition duration-300"
         />
         <div>
-          <h3 className="category-name">{name}</h3>
+          <h3 className="category-name transition duration-300">{name}</h3>
           <p className="text-xs text-grey">{amount} mockups</p>
         </div>
       </div>
@@ -36,6 +36,7 @@ export default function CategoryCard({ name, src, href, amount }: Category) {
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
+          className="transition duration-300"
         />
       </svg>
     </a>

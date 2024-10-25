@@ -1,3 +1,20 @@
+import DoublePage from "../ui/components/doublePage";
+import Form from "../ui/components/form";
+
 export default function Page() {
-  return <p>Contacts Page</p>;
+  return (
+    <main>
+      <DoublePage
+        title={
+          <p>
+            Have a
+            <br />
+            question?
+          </p>
+        }
+      >
+        <Form />
+      </DoublePage>
+    </main>
+  );
 }

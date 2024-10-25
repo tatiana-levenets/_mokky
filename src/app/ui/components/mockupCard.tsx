@@ -19,7 +19,7 @@ export default function MockupCard({ name, src, href }: Mockup) {
         placeholder="blur"
       />
 
-      <p className="mockup-name text-sm md:text-base font-bold text-grey">
+      <p className="mockup-name text-sm md:text-base font-bold text-grey transition duration-300">
         {name}
       </p>
     </a>

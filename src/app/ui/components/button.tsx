@@ -10,6 +10,7 @@ interface Props {
   link?: {
     href: string;
   };
+  handleClick?: () => void;
 }
 
 const variantClasses: Record<Variants, string> = {
@@ -23,6 +24,7 @@ export default function Button({
   className,
   children,
   link,
+  handleClick,
   variant = "primary",
 }: Props) {
   const classes = clsx(variantClasses[variant], className);
@@ -35,5 +37,9 @@ export default function Button({
     );
   }
 
-  return <button className={classes}>{children}</button>;
+  return (
+    <button className={classes} onClick={handleClick}>
+      {children}
+    </button>
+  );
 }

@@ -17,8 +17,7 @@ const config: Config = {
         pink: "#E36397",
         lightGrey: "#D8D7DB",
         grey: "#7C7988",
-        red: "#D64045",
-        test: "#aabbcc",
+        red: "#E63946",
       },
       fontFamily: {
         jost: ["var(--font-jost)"],

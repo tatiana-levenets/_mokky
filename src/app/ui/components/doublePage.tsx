@@ -8,11 +8,23 @@ interface Props {
 
 export default function DoublePage({ title, children }: Props) {
   return (
-    <div className="bg-gradient-to-r from-pink to-50% to-white from-50% h-screen">
-      <div className="custom-container relative top-1/2 -translate-y-1/2">
-        <div className="flex items-center gap-8 relative">
-          <div className="w-1/2 text-left bg-pink">
-            <Link href="#" className="back-link absolute top-10 left-0 p-2">
+    <div className="md:bg-gradient-to-r from-pink to-50% to-white from-50% h-screen">
+      <div className="relative md:top-1/2 md:-translate-y-1/2">
+        <div className="md:flex items-center gap-8 relative">
+          <div className="custom-container md:w-1/2 text-left bg-pink">
+            <Link href="/" className="md:absolute md:bottom-10 md:left-0">
+              <Image
+                src="/images/logo.svg"
+                width={160}
+                height={41}
+                alt="mokky logo"
+                className="mb-14 md:mb-0"
+              />
+            </Link>
+            <Link
+              href="/"
+              className="back-link absolute top-10 left-0 p-2 hidden md:block"
+            >
               <svg
                 width="13"
                 height="26"
@@ -33,16 +45,10 @@ export default function DoublePage({ title, children }: Props) {
             </Link>
 
             <h2 className="text-white">{title}</h2>
-            <Link href="/" className="absolute bottom-10 left-0">
-              <Image
-                src="/images/logo.svg"
-                width={160}
-                height={41}
-                alt="mokky logo"
-              />
-            </Link>
           </div>
-          <div className="w-1/2 p-10 bg-white">{children}</div>
+          <div className="custom-container md:w-1/2 py-10 md:p-10 bg-white">
+            {children}
+          </div>
         </div>
       </div>
     </div>

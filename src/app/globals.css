@@ -40,8 +40,9 @@ h3 {
   @apply text-xs text-grey p-5 border rounded border-lightGrey w-full focus-visible:outline-pink mb-3 lg:mb-6;
 }
 
-.primary-btn:hover span svg path,
-.secondary-btn:hover span svg path {
+.primary-btn:hover svg path,
+.secondary-btn:hover svg path,
+.delete-btn:hover svg path {
   fill: #f7f9f9;
 }
 

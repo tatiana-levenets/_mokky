@@ -1,6 +1,8 @@
 import Image from "next/image";
+
+import ImageController from "./components/imageController";
+import Breadcrumb from "../ui/components/breadcrumb";
 import Button from "../ui/components/button";
-import SidebarSection from "./components/sidebarSection";
 
 export default function Page() {
   return (
@@ -10,14 +12,12 @@ export default function Page() {
           <div className="mb-8 lg:mb-16">
             <h2>Iphone 14 mockup</h2>
             {/* todo component */}
-            <p className="text-grey text-sm">
-              Mokky/Categories/Device Mockups/Iphone 14
-            </p>
+            <Breadcrumb homeElement="Mokky" capitalizeLinks />
           </div>
           <div className="flex gap-8">
             <div className="w-1/3 py-6">
               {/* todo rename like ImageController */}
-              <SidebarSection />
+              <ImageController />
               <Button className="w-full">
                 Download
                 <span className="rotate-90">

@@ -36,21 +36,14 @@ h3 {
   @apply font-noto font-semibold text-xl md:text-2xl lg:text-3xl;
 }
 
-.primary-btn span svg path,
-.secondary-btn span svg path {
-  transition: 0.3s;
-}
-.primary-btn:hover span svg path,
-.secondary-btn:hover span svg path {
-  fill: #f7f9f9;
+.input-form {
+  @apply text-xs text-grey p-5 border rounded border-lightGrey w-full focus-visible:outline-pink mb-3 lg:mb-6;
 }
 
-/* todo */
-.arrow-card path,
-.category-name,
-.ctegory-icon,
-.mockup-name {
-  transition: 0.3s;
+.primary-btn:hover svg path,
+.secondary-btn:hover svg path,
+.delete-btn:hover svg path {
+  fill: #f7f9f9;
 }
 
 .category-card:hover .arrow-card path,
@@ -60,8 +53,7 @@ h3 {
   stroke: #6369d1;
 }
 
-.up-button:hover path,
-.up-button:hover rect {
+.back-link:hover path {
   stroke: #61e1e0;
 }
 
@@ -74,4 +66,8 @@ h3 {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+textarea {
+  resize: none;
 }
